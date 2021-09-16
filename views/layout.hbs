@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Gutiérrez</title>
+    <link rel="icon" href="images/home/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+  <body>
+        <header>
+        <div class="holder">
+        <img src="images/logo.png" width="150" alt="balanza justicia">
+        <h1>Estudio Jurídico Gutiérrez y Asociados</h1>
+    </div>
+    </header>
+        <nav>
+            <div class="holder">
+            <ul>
+                <li><a class="{{#if isHome}}activo{{/if}}" href="/">Home</a></li>
+                <li><a class="{{#if isNosotros}}activo{{/if}}" href="/nosotros">Nosotros</a></li>
+                <li><a class="{{#if isServicios}}activo{{/if}}" href="/servicios">Servicios</a></li>
+                <li><a class="{{#if isNovedades}}activo{{/if}}" href="/novedades">Novedades</a></li>
+                <li><a class="{{#if isSuexpediente}}activo{{/if}}" href="/suexpediente">Su trámite</a></li>
+                <li><a class="{{#if isContacto}}activo{{/if}}" href="/contacto">Contacto</a></li>
+            </ul>
+        </div>
+        </nav>
+    {{{body}}}
+    <footer>
+        <p>Diseñado por Claudia S Cabrera - &copy;año</p>
+    </footer>
+
+  </body>
+</html>

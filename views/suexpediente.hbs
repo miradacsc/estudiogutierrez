@@ -1,0 +1,37 @@
+<div class="cliente">
+
+    <h2 style="text-align: center;">Para conocer el estado de su trámite</h2>
+    <h3 style="text-align: center;">Ingrese sus datos aquí</h3>
+
+<form action="/suexpediente" method="post" class="consulta">
+    <p>
+        <label for="Nombre">Primer nombre:</label>
+        <input type="text" name="nombre">
+    </p>
+    <p>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="apellido">
+    </p>
+
+    <p>
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni">
+    </p>
+    <br>
+    <p class="aviso">
+        <span class="obligatorio"> * </span> Si los datos son incorrectos se le derivará al formulario de consultas, complételo y nos comunicaremos a la brevedad. Disculpe las molestias
+    </p> 
+    <p class="acciones">
+        <input type="submit" value="Consultar">
+    </p>
+</form>
+</div>
+<div class="cierre">
+    <div class="leyenda">
+    <p> Estimado/a {{data.nombre}} {{data.apellido}} respecto a su trámite: </p>
+    </div>
+    <div class="respuesta">
+    <p> {{data.estado}}</p>
+    </div>
+</div>
+<br>

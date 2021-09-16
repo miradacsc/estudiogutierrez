@@ -1,0 +1,45 @@
+<main class="holder">
+            <div class="columna left">
+                <h2>¿Querés hacernos una consulta?</h2>
+                <form action="/contacto" method="post" class="formulario">
+                    <p>
+                        <label for="Nombre">Nombre*</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label for="Apellido">Apellido*</label>
+                        <input type="text"name="apellido">
+                    </p>
+
+                    <p>
+                        <label for="Email">Email</label>
+                        <input type="text"name="email">
+                    </p>
+                    <p>
+                        <label for="Teléfono">Teléfono*</label>
+                        <input type="text" name="tel">
+                    </p>
+                    <p>
+                        <label for="Comentarios">Comentarios</label>
+                        <textarea name="comentario"></textarea>
+                    </p>
+                    <p class="acciones">
+                        <input type="submit" value="Enviar">
+                    </p>
+                    <br>
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                      </p> 
+                </form>
+                <p class="">{{message}}</p>
+            </div>
+            <div class="columna right">
+                <h2>Otras vías de contacto</h2>
+                <h3>Teléfono:</h3>
+                <p>(+54) 0341 - 4491983</p>
+                <h3>Email:</h3>
+                <a class="enlace" href="mailto:estudiogutierrezyasoc@gmail.com">estudiogutierrezyasoc@gmail.com</a>
+                <h3>Dirección:</h3> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7963.032351182!2d-60.665753576339156!3d-32.94988257979312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab69c156f28d%3A0x5b4be5ccc5340da0!2s3%20de%20Febrero%202517%2C%20S2000PFG%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1622411208293!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
